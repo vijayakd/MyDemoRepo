@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite" >
+  <test name="TNGGroupsSignInTEST">
+<listeners>
+    <listener class-name="retryPack.MyAnnotationTransformer" />
+  </listeners>
+   <groups>
+     <run>
+                <include name="redmine"/>
+     </run>
+  </groups> 
+  
+    <classes>
+            <class name="testNGTestScripts.TNGGroupsSignIn"/>                         
+            <class name="testNGTestScripts.TNGSignInVerifyMethodAnnotation"/>          
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

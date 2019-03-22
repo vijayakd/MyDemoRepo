@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="retryPack.MyAnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="failedTcScreenShot(failed)">
+    <classes>
+      <class name="testNGTestScripts.TNGFailedTCScreenShot">
+        <methods>
+          <include name="launch"/>
+          <include name="test3"/>
+          <include name="test4"/>
+          <include name="test2"/>
+          <include name="teardown"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- testNGTestScripts.TNGFailedTCScreenShot -->
+    </classes>
+  </test> <!-- failedTcScreenShot(failed) -->
+  <test thread-count="5" name="failedTcScreenShot1(failed)">
+    <classes>
+      <class name="testNGTestScripts.TNGFailedTcScreenShot1">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="tc5"/>
+          <include name="tc3"/>
+          <include name="openBrowser"/>
+          <include name="tc1"/>
+        </methods>
+      </class> <!-- testNGTestScripts.TNGFailedTcScreenShot1 -->
+    </classes>
+  </test> <!-- failedTcScreenShot1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+          
+                   <parameter name="browser" value="firefox"/>     
+                   <parameter name="url" value="https://login.yahoo.com/"/>
+                   <parameter name="email_id" value="test123@yahoo.com"/>
+         
+  
+    <classes>
+      <class name="testNGTestScripts.TNGParametersFromXML"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

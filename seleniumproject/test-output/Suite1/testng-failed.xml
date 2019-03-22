@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]">
+  <test thread-count="5" name="TNGVerifyPageTitle_B_A_ClassTEST(failed)">
+    <classes>
+      <class name="testNGTestScripts.TNGVerifyPageTitle_B_A_Class">
+        <methods>
+          <include name="click_search"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- testNGTestScripts.TNGVerifyPageTitle_B_A_Class -->
+    </classes>
+  </test> <!-- TNGVerifyPageTitle_B_A_ClassTEST(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

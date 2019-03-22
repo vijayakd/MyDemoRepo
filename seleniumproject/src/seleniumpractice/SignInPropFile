@@ -1,0 +1,16 @@
+
+
+#################### DEMO.REDMINE.ORG SIGN IN PAGE OBJECTS ##############################
+login_xpath=//input[@id="username"]
+
+pwdd_xpath=//input[@name="password"]
+
+
+###################################  DEMO.REDMINE.ORG SIGN IN PAGE USER DATA   ####################
+login=testsample2019
+Password=password
+
+
+
+browser= chrome
+URL= http://demo.redmine.org/

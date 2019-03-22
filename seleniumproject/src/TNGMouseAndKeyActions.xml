@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="methods" name="Suite">
+  <test name="Mouse Test">
+    <classes>
+    
+      <class name="testNGTestScripts.TNGMouseAndKeyActions"/>
+      
+    </classes>
+  </test> <!-- Mouse Test -->
+  
+  <test name="Robot Test">
+    <classes>
+    
+      <class name="testNGTestScripts.TNGFileUploadUsingRobotClass"/>
+      
+    </classes>
+  </test> <!-- Robot Test -->
+  
+    <test name="DynamicWebTable Test">
+    <classes>
+    
+      <class name="testNGTestScripts.TNGHandlingDynamicWebTable"/>
+            <class name="testNGTestScripts.TNGFailedTcScreenShot1"/>
+      
+      
+    </classes>
+  </test> <!-- DynamicWebTable Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+
+<listeners>
+    <listener class-name="retryPack.MyAnnotationTransformer" />
+  </listeners>
+  <test name="BrowserTest">
+  
+            <parameter name="browser" value="chrome" />
+              <parameter name="username" value="vijaya" />
+            
+  
+    <classes>
+      <class name="testNGTestScripts.TNGBrowserParameter"/>
+    </classes>
+  </test> <!-- BrowserTest -->
+  
+   <test name="failedTcScreenShot">
+  
+            
+  
+    <classes>
+     <class name="testNGTestScripts.TNGFailedTCScreenShot"/>
+     
+      
+    </classes>
+  </test> <!-- failedTcScreenShot -->
+  
+ 
+</suite> <!-- Suite -->
