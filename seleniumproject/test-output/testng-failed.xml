@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="retryPack.MyAnnotationTransformer"/>
-  </listeners>
-  <test thread-count="5" name="failedTcScreenShot(failed)">
+<suite parallel="methods" name="Failed suite [Suite]">
+  <test thread-count="5" parallel="methods" name="Robot Test(failed)">
     <classes>
-      <class name="testNGTestScripts.TNGFailedTCScreenShot">
+      <class name="testNGTestScripts.TNGFileUploadUsingRobotClass">
         <methods>
-          <include name="launch"/>
-          <include name="test3"/>
-          <include name="test4"/>
-          <include name="test2"/>
-          <include name="teardown"/>
-          <include name="test1"/>
+          <include name="fileupload_robo"/>
+          <include name="closebrowser"/>
+          <include name="openbrowser"/>
         </methods>
-      </class> <!-- testNGTestScripts.TNGFailedTCScreenShot -->
+      </class> <!-- testNGTestScripts.TNGFileUploadUsingRobotClass -->
     </classes>
-  </test> <!-- failedTcScreenShot(failed) -->
-  <test thread-count="5" name="failedTcScreenShot1(failed)">
-    <classes>
-      <class name="testNGTestScripts.TNGFailedTcScreenShot1">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="tc5"/>
-          <include name="tc3"/>
-          <include name="openBrowser"/>
-          <include name="tc1"/>
-        </methods>
-      </class> <!-- testNGTestScripts.TNGFailedTcScreenShot1 -->
-    </classes>
-  </test> <!-- failedTcScreenShot1(failed) -->
+  </test> <!-- Robot Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

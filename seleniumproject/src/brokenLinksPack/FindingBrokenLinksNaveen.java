@@ -27,7 +27,7 @@ public class FindingBrokenLinksNaveen {
 	        driver.manage().window().maximize();
           driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
           driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-          
+           
 		
 		driver.get("https://seleniumhq.github.io/selenium/docs/api/java/index.html");
 		
