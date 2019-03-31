@@ -2943,7 +2943,7 @@
         </junitreport>
     </target>
    
-    <taskdef name="testng" classname="org.testng.TestNGAntTask" classpathref="seleniumproject.classpath"/>
+    <taskdef name="testng" classname="org.testng.TestNGAntTask" classpathref="TestNG.libraryclasspath"/>
     <target name="RunProjectUsingAnt" depends="init-eclipse-compiler"   >   	
     <testng classpathref="seleniumproject.classpath" usedefaultlisteners="true">
              	   <xmlfileset dir="${basedir}" includes="testNG.xml"> 

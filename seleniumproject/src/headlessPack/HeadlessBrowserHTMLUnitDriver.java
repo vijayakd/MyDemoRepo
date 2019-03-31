@@ -1,4 +1,4 @@
-
+/*
 
 package headlessPack;
 
@@ -17,7 +17,7 @@ driver= new HtmlUnitDriver();
         driver.get("https://www.google.com/");
        System.out.println( driver.getCurrentUrl());
        // driver.quit();
-       /*
+       
        NOT AVAILABLE FROM SELENIUM 3.X
        TO  USE IT WE HAVE TO DOWNLOAD HTMLUNIT DRIVER JARS
 IT IT CALLED A GHOST DRIVER-----HEADLESS BROWSER
@@ -32,8 +32,9 @@ NOT SUITABLE FOR
    MOUSE MOVEMENTS ACTIONS CLASS
    
 
-       */
+       
 
 	}
 
 }
+*/

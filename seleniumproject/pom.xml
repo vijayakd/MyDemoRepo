@@ -3,26 +3,29 @@
   <groupId>seleniumproject</groupId>
   <artifactId>seleniumproject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+   <packaging>jar</packaging>
+
+  <name>seleniumproject</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
   <build>
-    <sourceDirectory>src</sourceDirectory>
-    <resources>
-      <resource>
-        <directory>src</directory>
-        <excludes>
-          <exclude>**/*.java</exclude>
-        </excludes>
-      </resource>
-    </resources>
+   
    
     <plugins>
      
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
-        <configuration>
-          <release>10</release>
-        </configuration>
-      </plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+          <configuration>
+          
+            <!-- put your configurations here -->
+          </configuration>
+        </plugin>
       
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -30,7 +33,7 @@
         <version>3.0.0-M3</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>C:\Users\vijay\git\MyDemoRepo\seleniumproject\src\testNG.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -41,18 +44,31 @@
   <dependencies>
      
   <!-- https://mvnrepository.com/artifact/com.codeborne/phantomjsdriver -->
-<dependency>
-    <groupId>com.codeborne</groupId>
-    <artifactId>phantomjsdriver</artifactId>
-    <version>1.2.1</version>
-</dependency>
+
   
-    <dependency>
+  <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.6</version>
+</dependency>
+
+  <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+  
+   <!-- https://mvnrepository.com/artifact/junit/junit -->
+<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.5.0-M1</version>
+    <scope>test</scope>
+</dependency>
+
     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
 <dependency>
     <groupId>org.apache.commons</groupId>
@@ -73,7 +89,7 @@
   <groupId>org.testng</groupId>
   <artifactId>testng</artifactId>
   <version>6.8</version>
-  <scope>compile</scope>
+  <scope>test</scope>
 </dependency>
 
 
