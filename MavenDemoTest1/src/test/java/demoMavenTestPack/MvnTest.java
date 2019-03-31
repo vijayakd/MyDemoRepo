@@ -14,7 +14,7 @@ public class MvnTest {
 	  System.out.println(a+b);
 	  Assert.assertEquals(30, b+a);
 	  System.out.println("in sum ");
-
+	  System.out.println("in sum ");
   }
   
   @Test
