@@ -37,7 +37,7 @@ public static int colnum;
 		   System.out.println( "No of days=======" + day_list.size());
 		   System.out.println("No of years======="+  year_list.size());
 		  
-		   String path="C:\\Users\\vijay\\Desktop\\FreeCRMTestData.xlsx";
+		  /* String path="C:\\Users\\vijay\\Desktop\\FreeCRMTestData.xlsx";
 		    
 			try {
 				fis = new FileInputStream(path);
@@ -49,18 +49,18 @@ public static int colnum;
 			 XSSFSheet sheet=excel.createSheet("bday_dd");
 			 sheet.createTable();
 			//XSSFSheet sheet=excel.createSheet("bday_dd");
-			/*int totalrows=sheet.getPhysicalNumberOfRows();
+			int totalrows=sheet.getPhysicalNumberOfRows();
 			for(int i=0;i<totalrows;i++) {
 			XSSFCell month_col=sheet.getRow(0).getCell(colnum);
 			month_col.setCellValue("monval");
 			}
-		*/} catch (IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		   
 		   
 		   
-		   
+		 */  
 		   for(int i=0;i<month_list.size();i++) {
          String monval = month_list.get(i).getText();
 			  System.out.println("month===="+monval);
